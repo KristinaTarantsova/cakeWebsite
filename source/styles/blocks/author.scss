@@ -1,0 +1,109 @@
+.author {
+  background-color: $color-widht;
+}
+
+.author__container {
+  display: flex;
+}
+
+.author__wrapper {
+  width: 580px;
+  min-height: 499px;
+  margin-top: 97px;
+}
+
+.author__desc {
+  margin-bottom: 24px;
+}
+
+.author__title {
+  min-height: 180px;
+  display: inline-block;
+  font-size: $font-size-1;
+  font-weight: $font-weight-2;
+  line-height: 60px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.author__item {
+  width: 438px;
+  min-height: 222px;
+
+  @include list-style;
+
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+.author__list {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 30px;
+  min-height: 54px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin: 5px 0;
+    background-color: $circle;
+    border-radius: 50%;
+  }
+}
+
+.author__link {
+  padding: 30px 50px;
+}
+
+.author__wrap {
+  margin-top: 14px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/leaf.svg");
+  }
+}
+
+.author__details {
+  position: absolute;
+  bottom: 160px;
+  left: -50px;
+  width: 287px;
+  display: flex;
+  flex-direction: column;
+}
+
+.author__name {
+  font-size: $font-size-2;
+  font-weight: $font-weight-2;
+  line-height: 29px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  padding: 15px 24px;
+  background-color: $color-text;
+  color: $color-widht;
+  min-height: 60px;
+  display: inline-block;
+}
+
+.author__text {
+  min-height: 52px;
+  background-color: $border-outline;
+  color: $color-text;
+  font-size: $font-size-5;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 15px 24px;
+  text-transform: uppercase;
+  display: inline-block;
+}

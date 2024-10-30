@@ -1,0 +1,13 @@
+.offer {
+  min-width: 96px;
+  min-height: 37px;
+  display: inline-block;
+  border-radius: $border-small;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: $bg-offer;
+  color: $color-text;
+  font-size: $font-size-10;
+  line-height: 16px;
+}

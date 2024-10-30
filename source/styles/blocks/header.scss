@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  min-height: 119px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 37px 0 31px;
+
+  &--bg {
+    background-color: #081130;
+  }
+}
+
+// .header__container {}
+
+.header__navigation {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.header__desc {
+  font-weight: $font-weight-2;
+  font-size: $font-size-3;
+  line-height: 30px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  min-width: 179px;
+  min-height: 31px;
+  color: $color-widht;
+  text-decoration: none;
+
+  @include interactive;
+}

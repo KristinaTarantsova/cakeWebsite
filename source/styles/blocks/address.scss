@@ -1,0 +1,75 @@
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
+.address__text {
+  font-weight: $font-weight-3;
+  font-size: $font-size-9;
+  line-height: 18px;
+  font-style: normal;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &--local {
+    min-height: 36px;
+    padding-left: 29px;
+  }
+
+
+  &--local::before {
+    content: "";
+    background-image: url("../../icons/location.svg");
+    background-size: 17px 23px;
+    background-position: center;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 23px;
+  }
+
+  &--time {
+    font-size: $font-size-8;
+    line-height: 19px;
+    padding-left: 0;
+  }
+}
+
+.address__wraper {
+  min-height: 51px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 51px;
+  margin-left: 69px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/fone.svg");
+    background-size: 19px;
+    background-position: center;
+    width: 19px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 19px;
+  }
+}
+
+.address__link {
+  font-weight: $font-weight-1;
+  font-size: $font-size-4;
+  line-height: 30px;
+  font-style: normal;
+  color: $color-widht;
+  text-decoration: none;
+
+  @include interactive;
+}

@@ -1,0 +1,103 @@
+.assortment {
+  padding: 0;
+}
+
+.assortment__container {
+  background-color: $color-widht;
+}
+
+.assortment__header {
+  font-weight: $font-weight-2;
+  font-size: $font-size-1;
+  line-height: 60px;
+  min-height: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.assortment__wrapper {
+  margin-top: 80px;
+}
+
+.assortment__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @include list-style;
+}
+
+.assortment__item {
+  gap: 20px;
+  box-shadow: 2px 8px 16px 0 $shadow;
+}
+
+.assortment__icons {
+  text-decoration: none;
+  display: block;
+  width: 380px;
+  height: 245px;
+
+  @include interactive;
+}
+
+.assortment__inner {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.assortment__img {
+  display: block;
+}
+
+.assortment__wrap {
+  padding: 50px 89px 50px 44px;
+  border: $border solid $border-outline;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.assortment__title {
+  font-weight: $font-weight-1;
+  font-style: $font-size-2;
+  line-height: 34px;
+  min-height: 35px;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.assortment__text {
+  font-weight: $font-weight-3;
+  font-size: $font-size-6;
+  line-height: 24px;
+  margin: 0;
+  min-height: 48px;
+}
+
+.assortment__box {
+  max-width: 163px;
+  min-height: 118px;
+  margin-top: 24px;
+}
+
+.assortment__price {
+  font-weight: $font-weight-2;
+  color: $numbers-color;
+  font-size: $font-size-2;
+  line-height: 36px;
+  margin-bottom: 14px;
+  min-height: 36px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.assortment__link {
+  padding: 20px 40px;
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+
+  @include interactive-button;
+}

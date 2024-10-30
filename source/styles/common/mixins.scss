@@ -1,0 +1,57 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src;
+    font-display: swap;
+  }
+}
+
+//resetting the list
+@mixin list-style {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+// // интерактив
+@mixin interactive {
+  &:not([href]) {
+    background-color: $defolt;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:focus-visible {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.5;
+  }
+}
+
+@mixin interactive-button {
+  &:disabled {
+    background-color: $defolt;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
